@@ -26,8 +26,6 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
       - name: Create Pull Request
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.GH_TOKEN }}
